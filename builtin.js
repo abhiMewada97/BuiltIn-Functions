@@ -1,53 +1,47 @@
+###########  indexOf    ############
 let msg = "  abhi   shek    "
 let index = msg.indexOf("hi");
 
 Math.min(arr5) 
 
-let str = "ILoveCoding";
-console.log(str.slice(5));
+###########  slice in js & substring in java    ############
+in js                                              in java
+
+let str = "ILoveCoding";                              String str = "Hello, world!";
+console.log(str.slice(5));                            String subStr = str.substring(7);
 console.log(str.slice(1,4));
 console.log(str.slice(-3));
 
+###########  shift & unshift    ############
+in js                                                           in java
 
-let month = ["january", "july", "march", "august"];
-month.shift();
-month.unshift("june");
+let month = ["january", "july", "march", "august"];               push & pop
+month.shift();             //remove from first
+month.unshift("june");     // push at first
 
-
-month.splice(0,1,"dec","oct");
-month.splice(2);
+###########  splice    ############
+month.splice(0,1,"dec","oct");       // array.splice(start, deleteCount, item1, item2, ...);
+month.splice(2);                     // start delete from index 2
 month.splice(2,0,"feb");
 
+in js                                                                         in java
 
-month.sort();
+let arr = [1, 2, 3, 4, 5];                                             ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+arr.splice(2, 2); // Removes 2 elements starting at index 2            list.subList(2, 4).clear(); // Removes elements from index 2 to 3
+console.log(arr); // [1, 2, 5]                                        System.out.println(list); // [1, 2, 5]
 
+let arr = [1, 2, 3, 4, 5];                                                      ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+arr.splice(2, 0, 'a', 'b'); // Adds 'a' and 'b' starting at index 2            list.addAll(2, Arrays.asList('a', 'b')); // Adds 'a' and 'b' starting at index 2
+console.log(arr); // [1, 2, 'a', 'b', 3, 4, 5]                                 System.out.println(list); // [1, 2, 'a', 'b', 3, 4, 5]
 
-const arr1 = [13,52,41,63,45];
-arr1.pop();
-arr1.push(5);
-// arr1 = [9,4,6,2];      //wrong reference can't change of cost array
+let arr = [1, 2, 3, 4, 5];                                                                         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));      
+arr.splice(2, 2, 'a', 'b'); // Replaces 2 elements starting at index 2 with 'a' and 'b'            list.subList(2, 4).clear(); // Removes elements from index 2 to 3
+console.log(arr); // [1, 2, 'a', 'b', 5]                                                           list.addAll(2, Arrays.asList('a', 'b')); // Adds 'a' and 'b' starting at index 2
 
-let arr2 = [1,2,3,-1];
-let n = arr2.length;
-let arr3 = arr2.slice(0,n);
-
-
-// if roll key are not available then new roll key will be added
-// obj.roll
-obj.roll=23
-
+#######  delete   #########
 delete obj[2]
 delete obj.name
 
-
-
-id = setInterval(() =>{
-    console.log("hello world")
-},2000);
-
-setTimeout(()=> {
-    clearInterval(id);
-},1000);
 
 //+++++++            forEach           ***************************
 arr.forEach((el) => {
@@ -55,35 +49,20 @@ arr.forEach((el) => {
 });
 
 
-//+++++++             map           ***************************
-
-let double = num.map((el) => {
-    return el*2;
-});
-
-
-// +++++++               filter           ***************************
-
-let even = nums.filter((el)=>{
-    return el%2==0; // return true for even , odd -> false 
-    return el<7;
-});
-
-
-//+++++++        every func       ***************************
+//+++++++        every func       ***************************  all must we true
 
 arr1.every((el) => el%2==0);
 
 [2,4,6].every((el) => el%2==0);
 
 
-//+++++++        some func       ***************************
+//+++++++        some func       ***************************    any one true
 
 arr2.every((el) => el%2==0);
 
 [2,4,1].every((el) => el%2==0);
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //+++++++        reduce func       ***************************
 
 arr3.reduce((res,el) => { 
