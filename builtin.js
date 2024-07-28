@@ -1,3 +1,8 @@
+###########  Conversion    ############
+int num = Integer.parseInt(args[i]);
+int num = Integer.valueOf(args[i]);
+ Character.toLowerCase(s.charAt(i));
+
 ###########  indexOf    ############
 let msg = "  abhi   shek    "
 let index = msg.indexOf("hi");
