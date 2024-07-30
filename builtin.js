@@ -1,3 +1,29 @@
+#########     Time Complexity   ###########
+
+1s ~= 10^8
+2s ~= 2*10^8
+3s ~= 3*10^8
+
+#########    Conversion    #########
+
+int num = Integer.parseInt(args[i]);
+int num = Integer.valueOf(args[i]);
+Character.toLowerCase(s.charAt(i));
+
+
+##########     Sorting Algorithm       ###########
+
+Time complexity
+Merge sort	    nlog(n)	  nlog(n)		  nlog(n)		   (n)
+Quick sort	    nlog(n)	  nlog(n)		  (n^2)		      (n)	inplace sort
+
+Heap sort	     nlog(n)	  nlog(n)		  nlog(n)		    (1)	inplace sort
+
+Selection	    (n^2)	     (n^2)		    (n^2)		       (1)
+Bubble 	       (n)		     (n^2)		    (n^2)		       (1)	inplace sort
+Insertion	     (n)		     (n^2)		    (n^2)		       (1)	inplace sort
+
+
 ##########  String   ############
 
 ch=str.charAt(4);
