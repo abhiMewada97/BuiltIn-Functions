@@ -1,3 +1,52 @@
+##########  String   ############
+
+ch=str.charAt(4);
+str.compareTo(s2); // give + or - value
+str.length();
+str=str.concat(" is immutable so assign it explicitly");
+str.contains("value");
+str.endsWith("valule");
+str.equals(str2);
+Character.toUpperCase(ch1);
+Character.toLowerCase(ch1);
+str.isEmpty();
+str.indexOf("value");
+str.length();
+str.replace('a','e');
+str.startsWith(prefix, 0);
+str.substring(from,to);
+String s1="hello";
+char[] ch=s1.toCharArray();
+
+int value=30;
+String st = String.valueOf(value);
+
+str=str.trim(); //space
+str.indexOf("value");
+str.indexOf("value");
+str.split("t", 0);
+
+str.equalsIgnoreCase(str1);
+
+
+
+###########   Hashing      ###########
+
+hm.put("key",value);
+hm.get("US");
+hm.remove("key");
+hm.containsKey("key");
+hm.size();
+hm.clear();
+
+LinkedHashSet <String> lhs = new LinkedHashSet<>();
+HashSet<Integer> set = new HashSet<>();
+TreeSet<Integer> set = new TreeSet<>();
+
+set.add(value);
+set.isEmpty();
+
+
 ###########  Conversion    ############
 int num = Integer.parseInt(args[i]);
 int num = Integer.valueOf(args[i]);
