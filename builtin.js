@@ -4,14 +4,6 @@
 2s ~= 2*10^8
 3s ~= 3*10^8
 
-#########    Conversion    #########
-
-int num = Integer.parseInt(args[i]);
-int num = Integer.valueOf(args[i]);
-Character.toLowerCase(s.charAt(i));
-char[] ch=str.toCharArray();              // string to array
-String str = String.join(" ",words);      //  array to string
-
 ##########     Sorting Algorithm       ###########
 
 Time complexity
@@ -24,113 +16,6 @@ Selection	    (n^2)	     (n^2)		    (n^2)		       (1)
 Bubble 	       (n)		     (n^2)		    (n^2)		       (1)	inplace sort
 Insertion	     (n)		     (n^2)		    (n^2)		       (1)	inplace sort
 
-
-##########  String   ############
-
-char[] ch=str.toCharArray();
-
-String[] words = s.split("\\s+");
-String str = String.join(" ",words);
-
-// //
-String myStr = "Split a string by spaces, and also punctuation.";
-String regex = "[,\\.\\s]";
-
-String[] myArray = myStr.split(regex);
-
-for (String s : myArray) {
-  System.out.println(s);
-}
-
-// //
-String myStr = "I love cats. Cats are very easy to love. Cats are very popular.";
-String regex = "(?i)cat";
-System.out.println(myStr.replaceAll(regex, "dog"));
-// //
-
-ch=str.charAt(4);
-str.indexOf("value");
-
-str.replace('a','e');
-
-str.endsWith("valule");
-str.startsWith("valule");
-str.substring(from,to);     // (2,3)  from=2  count =(3-2)= 1
-
-str.compareTo(s2);    // returns -1, 0, & 1 for <, =, & >
-str.equals(str2);         //  returns true & false
-
-str.length();
-
-str=str.concat(" is immutable so assign it explicitly");
-
-str.contains("value");
-str.isEmpty();
-
-Character.toUpperCase(ch1);
-Character.toLowerCase(ch1);
-
-char[] myArray = {'a', 'b', 'c'};
-String st = String.valueOf(myArray );   //abc
-
-str=str.trim(); //space
-str.indexOf("value");
-str.indexOf("value");
-str.split("t", 0);
-
-str.equalsIgnoreCase(str1);
-
-
-##########     Array List   ###############
-List<String> myAlist = new ArrayList<String>();
-ArrayList<Integer> arr = new ArrayList<Integer>();
-
-
-myAlist.add("value");
-myAlist.remove("value");
-myAlist.get(index);
-arrlist1.addAll(arraylist2);
-arr.clear();
-arr.contains(value);
-arr.isEmpty();
-arr.indexOf(value);
-
-
-#########      Linked List       ###############
-
-Collections_framwork
-LinkedList <Integer> ll = new LinkedList<>();
-ll.addLast(value);
-ll.addFirst(value);
-ll.removeFirst(value);
-LinkedList <Integer> ll = new LinkedList<>();
-ll.removeLast(value);
-ll.get(index);
-ll.addAll(collect);
-ll.clear();
-ll.contains("value");
-ll.indexOf("value");
-
-
-LinkedList sec_ll = new LinkedList();
-sec_ll = (LinkedList) ll.clone();
-
-
-###########   Hashing      ###########
-
-map.put("key",value);
-map.get("US");     // if not available return null
-map.remove("key");
-map.containsKey("key");     // if not available return false
-map.size();
-map.clear();
-
-LinkedHashSet <String> lhs = new LinkedHashSet<>();
-HashSet<Integer> set = new HashSet<>();
-TreeSet<Integer> set = new TreeSet<>();
-
-set.add(value);
-set.isEmpty();
 
 
 ###########  Conversion    ############
