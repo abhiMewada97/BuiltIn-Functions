@@ -1,4 +1,6 @@
 ###########   Hashing      ###########
+for (Map.Entry<Integer,Integer> mapElement : hm.entrySet()) { }
+for (Integer key : freq.keySet()) { }
 
 map.put("key",value);
 map.get("US");     // if not available return null
