@@ -15,3 +15,5 @@ TreeSet<Integer> set = new TreeSet<>();
 
 set.add(value);
 set.isEmpty();
+
+for (String s : set) { }
