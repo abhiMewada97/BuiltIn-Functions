@@ -52,3 +52,4 @@ str.indexOf("value");
 str.split("t", 0);
 
 str.equalsIgnoreCase(str1);
+ch.isLetterOrDigit(ch);
