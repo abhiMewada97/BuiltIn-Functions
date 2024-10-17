@@ -3,6 +3,9 @@
 int num = Integer.parseInt(args[i]);
 int num = Integer.valueOf(args[i]);
 
+String s = String.valueOf(integer_Value);     // integer to string
+String s = Integer.toString(integer_Value);   // integer to string
+  
 Character.toLowerCase(s.charAt(i));
 
 char[] ch=str.toCharArray();              // string to array
