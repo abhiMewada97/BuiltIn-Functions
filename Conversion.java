@@ -1,5 +1,8 @@
 #########    Conversion    #########
 
+String binary = "1010"; 
+int decimal = Integer.parseInt(binary, 2);  // 10
+
 int num = Integer.parseInt(args[i]);
 int num = Integer.valueOf(args[i]);
 
